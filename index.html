@@ -70,6 +70,7 @@ h1{margin:10px 0 5px 0;}
   border-radius:15px;
   padding:12px;
   margin-bottom:18px;
+  position:relative;
 }
 
 /* IMAGE SLIDER */
@@ -89,6 +90,19 @@ h1{margin:10px 0 5px 0;}
   color:#00bfff;
   font-size:22px;
   margin:8px 0;
+}
+
+/* LIKE BUTTON */
+.like-btn{
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  background:rgba(0,0,0,0.6);
+  padding:6px 10px;
+  border-radius:20px;
+  font-size:13px;
+  cursor:pointer;
+  user-select:none;
 }
 
 /* WHATSAPP BUTTON */
@@ -112,7 +126,6 @@ h1{margin:10px 0 5px 0;}
 <div class="header">
   <div class="call-btn">📞 9476309568</div>
 
-  <!-- LOGO -->
   <div class="profile-pic">
     <img src="file_00000000ec5c72089ed9a8a56790f2e4.png">
   </div>
@@ -129,12 +142,15 @@ h1{margin:10px 0 5px 0;}
 
   <!-- PRODUCT 1 -->
   <div class="card">
+
     <div class="slider">
       <img src="1.jpeg">
       <img src="2.jpeg">
       <img src="3.jpeg">
       <img src="4.jpeg">
     </div>
+
+    <div class="like-btn" onclick="this.innerHTML='❤️ Liked'">❤️ Like</div>
 
     <h2>Round Neck Women Blouse</h2>
     <div class="price">₹295</div>
@@ -148,11 +164,14 @@ h1{margin:10px 0 5px 0;}
 
   <!-- PRODUCT 2 -->
   <div class="card">
+
     <div class="slider">
       <img src="5.jpeg">
       <img src="6.jpeg">
       <img src="7.jpeg">
     </div>
+
+    <div class="like-btn" onclick="this.innerHTML='❤️ Liked'">❤️ Like</div>
 
     <h2>Round Neck Women Blouse</h2>
     <div class="price">₹320</div>
@@ -167,4 +186,4 @@ h1{margin:10px 0 5px 0;}
 </div>
 
 </body>
-  </html>
+</html>
