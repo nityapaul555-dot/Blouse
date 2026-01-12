@@ -8,7 +8,7 @@
 <style>
 body{
 margin:0;
-font-family:'Segoe UI',sans-serif;
+font-family: 'Segoe UI', sans-serif;
 background:#050816;
 color:white;
 }
@@ -47,10 +47,31 @@ object-fit:cover;
 .header h1{margin:10px 0 5px;}
 .header p{opacity:.9;font-size:14px}
 
+/* SOCIAL */
+.social{
+display:flex;
+justify-content:center;
+gap:15px;
+margin-top:12px;
+}
+
+.social a{
+width:42px;
+height:42px;
+border-radius:50%;
+background:white;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.social img{
+width:22px;
+}
+
 /* SEARCH */
 .search-area{
 padding:15px;
-background:#050816;
 }
 
 .search-area input{
@@ -79,7 +100,7 @@ box-shadow:0 10px 25px rgba(0,0,0,.6);
 
 .slider img{
 width:100%;
-height:190px;
+height:200px;
 object-fit:cover;
 display:none;
 }
@@ -113,29 +134,7 @@ color:black;
 font-weight:bold;
 }
 
-/* SOCIAL BOTTOM */
-.footer-social{
-display:flex;
-justify-content:center;
-gap:15px;
-margin:25px 0 10px;
-opacity:.7;
-transform:scale(.85);
-}
-
-.footer-social a{
-width:40px;
-height:40px;
-border-radius:50%;
-background:white;
-display:flex;
-align-items:center;
-justify-content:center;
-}
-
-.footer-social img{width:22px;}
-
-footer{text-align:center;opacity:.6;margin-bottom:20px;}
+footer{text-align:center;opacity:.6;margin:20px 0;}
 </style>
 </head>
 
@@ -144,9 +143,20 @@ footer{text-align:center;opacity:.6;margin-bottom:20px;}
 <div class="header">
 <div class="help">📞 <a href="tel:9476309568">9476309568</a></div>
 
-<img src="logo.png" class="logo">
+<img src="file_00000000ec5c72089ed9a8a56790f2e4.png" class="logo">
+
 <h1>M Fashion</h1>
 <p>Exclusive Blouse Collection • Order on WhatsApp</p>
+
+<div class="social">
+<a href="https://instagram.com/YOUR_ID" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+</a>
+
+<a href="https://facebook.com/YOUR_ID" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png">
+</a>
+</div>
 </div>
 
 <!-- SEARCH -->
@@ -157,36 +167,47 @@ footer{text-align:center;opacity:.6;margin-bottom:20px;}
 <!-- PRODUCTS -->
 <div class="products" id="products">
 
+<!-- PRODUCT 1 -->
 <div class="card">
 <div class="slider">
-<img src="b1.jpg" class="active">
-<img src="b1b.jpg">
-<img src="b1c.jpg">
+<img src="1.jpeg" class="active">
+<img src="2.jpeg">
+<img src="3.jpeg">
+<img src="4.jpeg">
 </div>
 
 <div class="card-content">
 <h3>Designer Blouse</h3>
-<div class="price">₹499</div>
+<div class="price">₹340</div>
 
-<button class="like-btn" onclick="like(this,'b1')">❤️ Like (<span>0</span>)</button>
+<button class="like-btn" onclick="like(this,'p1')">❤️ Like (<span>0</span>)</button>
 
 <a class="order-btn" target="_blank"
-href="https://wa.me/919476309568?text=I want to order Designer Blouse - ₹499">
+href="https://wa.me/919476309568?text=I want to order Designer Blouse - ₹340">
 Order on WhatsApp</a>
 </div>
 </div>
 
+<!-- PRODUCT 2 -->
+<div class="card">
+<div class="slider">
+<img src="5.jpeg" class="active">
+<img src="6.jpeg">
+<img src="7.jpeg">
 </div>
 
-<!-- SOCIAL BOTTOM -->
-<div class="footer-social">
-<a href="https://instagram.com/YOUR_ID" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
-</a>
+<div class="card-content">
+<h3>Stylish Blouse</h3>
+<div class="price">₹300</div>
 
-<a href="https://facebook.com/YOUR_ID" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png">
-</a>
+<button class="like-btn" onclick="like(this,'p2')">❤️ Like (<span>0</span>)</button>
+
+<a class="order-btn" target="_blank"
+href="https://wa.me/919476309568?text=I want to order Stylish Blouse - ₹300">
+Order on WhatsApp</a>
+</div>
+</div>
+
 </div>
 
 <footer>© 2026 | M Fashion Blouse Store</footer>
@@ -217,4 +238,4 @@ imgs[(active+1)%imgs.length].classList.add("active");
 </script>
 
 </body>
-  </html>
+</html>
