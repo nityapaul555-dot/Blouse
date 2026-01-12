@@ -6,163 +6,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body{
-margin:0;
-font-family: 'Segoe UI', sans-serif;
-background:#050816;
-color:white;
-}
-
-/* HEADER */
+body{margin:0;font-family:Segoe UI;background:#050816;color:white}
 .header{
 background:linear-gradient(135deg,#ff0080,#7a1cff);
-padding:30px 15px 40px;
-border-bottom-left-radius:40px;
-border-bottom-right-radius:40px;
-text-align:center;
-position:relative;
-}
-
-.help{
-position:absolute;
-top:12px;
-right:12px;
-background:#00000080;
-padding:6px 12px;
-border-radius:20px;
-font-size:13px;
-}
-
-.help a{color:#00ffb3;text-decoration:none;}
-
-.logo{
-width:110px;
-height:110px;
-border-radius:50%;
-border:4px solid white;
-background:black;
-object-fit:cover;
-}
-
-.header h1{margin:10px 0 5px;}
-.header p{opacity:.9;font-size:14px}
-
-/* SOCIAL */
-.social{
-display:flex;
-justify-content:center;
-gap:15px;
-margin-top:12px;
-}
-
-.social a{
-width:42px;
-height:42px;
-border-radius:50%;
-background:white;
-display:flex;
-align-items:center;
-justify-content:center;
-}
-
-.social img{
-width:22px;
-}
-
-/* SEARCH */
-.search-area{
-padding:15px;
-background:#050816;
-}
-
-.search-area input{
-width:100%;
-padding:14px;
-border-radius:30px;
-border:none;
-outline:none;
-font-size:16px;
-}
-
-/* PRODUCTS */
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-gap:15px;
-padding:15px;
-}
-
-.card{
-background:linear-gradient(135deg,#0b1233,#020514);
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,.6);
-}
-
-.slider img{
-width:100%;
-height:190px;
-object-fit:cover;
-display:none;
-cursor:pointer;
-}
-
-.slider img.active{display:block;}
-
-.card-content{
-padding:10px;
-text-align:center;
-}
-
-.price{color:#33c7ff;font-size:20px;font-weight:bold;}
-
-.like-btn{
-background:#1a2147;
-border:none;
-color:white;
-padding:6px 12px;
-border-radius:20px;
-margin:6px 0;
-}
-
-.order-btn{
-display:block;
-background:linear-gradient(135deg,#00ff9c,#00c853);
-margin-top:6px;
-padding:10px;
-border-radius:25px;
-text-decoration:none;
-color:black;
-font-weight:bold;
-}
-
-footer{text-align:center;opacity:.6;margin:20px 0;}
-
-/* FULLSCREEN VIEW */
-.viewer{
-position:fixed;
-top:0;left:0;
-width:100%;
-height:100%;
-background:black;
-display:none;
-align-items:center;
-justify-content:center;
-z-index:9999;
-}
-
-.viewer img{
-max-width:100%;
-max-height:100%;
-}
-
-.viewer span{
-position:absolute;
-top:15px;
-right:20px;
-font-size:30px;
-cursor:pointer;
-}
+padding:30px 15px 40px;border-bottom-left-radius:40px;border-bottom-right-radius:40px;
+text-align:center;position:relative}
+.help{position:absolute;top:12px;right:12px;background:#00000080;padding:6px 12px;border-radius:20px;font-size:13px}
+.help a{color:#00ffb3;text-decoration:none}
+.logo{width:110px;height:110px;border-radius:50%;border:4px solid white;background:black;object-fit:cover}
+.social{display:flex;justify-content:center;gap:15px;margin-top:12px}
+.social img{width:36px}
+.search-area{padding:15px}
+.search-area input{width:100%;padding:14px;border-radius:30px;border:none;font-size:16px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:15px;padding:15px}
+.card{background:linear-gradient(135deg,#0b1233,#020514);border-radius:18px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,.6)}
+.slider img{width:100%;height:190px;object-fit:cover;display:none}
+.slider img.active{display:block}
+.card-content{text-align:center;padding:10px}
+.price{color:#33c7ff;font-size:20px;font-weight:bold}
+.like-btn{background:#1a2147;border:none;color:white;padding:6px 12px;border-radius:20px;margin:6px 0}
+.order-btn{display:block;background:linear-gradient(135deg,#00ff9c,#00c853);margin-top:6px;padding:10px;border-radius:25px;text-decoration:none;color:black;font-weight:bold}
+footer{text-align:center;opacity:.6;margin:20px 0}
 </style>
 </head>
 
@@ -170,17 +34,14 @@ cursor:pointer;
 
 <div class="header">
 <div class="help">📞 <a href="tel:9476309568">9476309568</a></div>
-
-<img src="file_00000000ec5c72089ed9a8a56790f2e4.png" class="logo">
+<img src="logo.png" class="logo">
 <h1>M Fashion</h1>
 <p>Exclusive Blouse Collection • Order on WhatsApp</p>
-
 <div class="social">
-<a href="https://instagram.com/YOUR_ID" target="_blank">
+<a href="https://www.instagram.com/nitya__paul__?igsh=MXhhZjVzeWRxMDF3Ng==" target="_blank">
 <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
 </a>
-
-<a href="https://facebook.com/YOUR_ID" target="_blank">
+<a href="https://www.facebook.com/nitya.paul.969?mibextid=ZbWKwL" target="_blank">
 <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png">
 </a>
 </div>
@@ -190,40 +51,36 @@ cursor:pointer;
 <input type="text" id="search" placeholder="🔍 Search blouse..." onkeyup="searchProduct()">
 </div>
 
-<div class="products" id="products">
-
-<!-- ✅ NEW PRODUCT ADDED -->
-<div class="card">
-<div class="slider">
-<img src="a.jpeg" class="active" onclick="openView(this)">
-<img src="a1.jpeg" onclick="openView(this)">
-<img src="a2.jpeg" onclick="openView(this)">
-<img src="a3.jpeg" onclick="openView(this)">
-</div>
-
-<div class="card-content">
-<h3>New Model Blouse</h3>
-<div class="price">₹359</div>
-
-<button class="like-btn" onclick="like(this,'new1')">❤️ Like (<span>0</span>)</button>
-
-<a class="order-btn" target="_blank"
-href="https://wa.me/919476309568?text=I want to order New Model Blouse - ₹359">
-Order on WhatsApp</a>
-</div>
-</div>
-
-</div>
+<div class="products" id="products"></div>
 
 <footer>© 2026 | M Fashion Blouse Store</footer>
 
-<!-- FULL VIEW -->
-<div class="viewer" id="viewer">
-<span onclick="closeView()">✕</span>
-<img id="viewImg">
-</div>
-
 <script>
+const products = [
+ { id:"p1", name:"Designer Blouse", price:340, imgCount:3 },
+ { id:"p2", name:"Stylish Blouse", price:300, imgCount:2 },
+];
+
+const box=document.getElementById("products");
+
+products.forEach(p=>{
+let imgs="";
+for(let i=1;i<=p.imgCount;i++){
+imgs+=`<img src="${p.id}-${i}.jpg" ${i==1?"class='active'":""}>`;
+}
+box.innerHTML+=`
+<div class="card">
+<div class="slider">${imgs}</div>
+<div class="card-content">
+<h3>${p.name}</h3>
+<div class="price">₹${p.price}</div>
+<button class="like-btn" onclick="like(this,'${p.id}')">❤️ Like (<span>0</span>)</button>
+<a class="order-btn" target="_blank"
+href="https://wa.me/919476309568?text=I want to order ${p.name} - ₹${p.price}">
+Order on WhatsApp</a>
+</div></div>`;
+});
+
 function like(btn,id){
 if(localStorage.getItem(id)) return alert("আপনি ইতিমধ্যে like দিয়েছেন ❤️");
 let span=btn.querySelector("span");
@@ -232,29 +89,20 @@ localStorage.setItem(id,true);
 }
 
 function searchProduct(){
-let value=document.getElementById("search").value.toLowerCase();
-document.querySelectorAll(".card").forEach(card=>{
-card.style.display=card.innerText.toLowerCase().includes(value)?"block":"none";
+let v=document.getElementById("search").value.toLowerCase();
+document.querySelectorAll(".card").forEach(c=>{
+c.style.display=c.innerText.toLowerCase().includes(v)?"block":"none";
 });
 }
 
 setInterval(()=>{
-document.querySelectorAll(".slider").forEach(slider=>{
-let imgs=slider.querySelectorAll("img");
-let active=[...imgs].findIndex(img=>img.classList.contains("active"));
-imgs[active].classList.remove("active");
-imgs[(active+1)%imgs.length].classList.add("active");
+document.querySelectorAll(".slider").forEach(sl=>{
+let imgs=sl.querySelectorAll("img");
+let a=[...imgs].findIndex(i=>i.classList.contains("active"));
+imgs[a].classList.remove("active");
+imgs[(a+1)%imgs.length].classList.add("active");
 });
 },3000);
-
-function openView(img){
-document.getElementById("viewer").style.display="flex";
-document.getElementById("viewImg").src=img.src;
-}
-
-function closeView(){
-document.getElementById("viewer").style.display="none";
-}
 </script>
 
 </body>
